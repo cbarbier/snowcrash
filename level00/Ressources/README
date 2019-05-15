@@ -1,0 +1,8 @@
+# cat /etc/passwd | cut -d: -f1
+# there's a user flag00 let's what he got
+# ls -lR / 2> /dev/null | grep flag00
+# we found the file /usr/sbin/john
+# containing : cdiiddwpgswtgt
+# after rotating it from 0 to 26
+# rot11 looked good : nottoohardhere
+# That's it!
