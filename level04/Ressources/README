@@ -1,0 +1,7 @@
+# the perl script level04 in the home directory
+# uses CGI and mentions localhost:4747.
+# the script executes echo $y with y being a
+# query parameter called 'x'
+# localhost:4747?x=$(bash -c getflag)
+# the subshell allows us to bypass the echo
+# therefore print the flag.
