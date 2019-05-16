@@ -1,0 +1,7 @@
+# reversing the binary level08 in the home directory,
+# we found that the file passing as argument must not
+# contains token in its name (strstr).
+# To bypass we create a symbolic link in the tmp
+# directory and the flag appeared.
+# once in the /tmp/dir :
+# ln -s ~/token link
