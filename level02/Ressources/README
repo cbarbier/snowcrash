@@ -1,0 +1,4 @@
+On ouvrele packet avec wireshark, on lit les data.
+ft_wandr   NDRel L0L
+On s'appercoit que les espaces son en faite des delete (code hexa 7f)
+Le mot de pass est donc ft_waNDReL0L
