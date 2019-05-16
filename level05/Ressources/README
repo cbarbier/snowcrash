@@ -1,0 +1,8 @@
+On a vu un fichier dans /var/mail qui appartennait a level05
+*/2 * * * * su -c "sh /usr/sbin/openarenaserver" - flag05
+
+On s'est dit que c'etait un crontab qui apartennait a flag05
+
+On a regarde le script /usr/sbin/openarenaserver, il execute tout les fichier dans /opt/openarenaserver/
+On y ecrit donc un script exploit.sh et On creer un dossier /tmp/exploit avec les droit chmod 777 pour que flag05 puisse y ecrire.
+et on attend
