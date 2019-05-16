@@ -1,0 +1,4 @@
+On dessassemble le code, on voit que la foncion getenv est appelé avec l'argument LOGNAME
+On voit que a la fin un appel systeme est fait sur echo %s ou %s correspond au LOGNAME
+On remplace la var LOGNAME par "lol && /bin/bash"
+et Paf
