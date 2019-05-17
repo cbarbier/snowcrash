@@ -1,0 +1,4 @@
+On regarde comment se comporte le binaire.
+En faisant quelaues tests on comprend son fonctionement. par exemple aaa => abc
+On se dit que le token est passeé dans le binaire donc on fait l'inverse du programme grace a un script python apres avoir xxd le token.
+Il faut supprimer le dernier charactere cat c'est une newline rajouteé par le binaire.
