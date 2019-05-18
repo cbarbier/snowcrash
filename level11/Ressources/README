@@ -1,0 +1,3 @@
+On a commencer a chercher le hash avant de comprendre meme si ca marchait ca nous apporterais rien.
+On regarde le code lua et apres l'avoirrepliquer sur notre machine, on voit un popen qui execute du shell on se dit qu'on va executer du shell
+On nc 127.0.0.1 5151 puis on tappe cette commande "lol; getflag >/tmp/oui/lol;ls" ne pas oublier de chmod 777 /tmp/oui
