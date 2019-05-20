@@ -1,5 +1,2 @@
-# the getuid must return 4242 , we tried to 
-# load our version of getuid dynamically but it didnt
-# work. With GDB we jumped the cmp 4242 with the getuid
-# return value, thus we got the falg :)
+
 
