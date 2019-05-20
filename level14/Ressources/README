@@ -1,2 +1,10 @@
-
+# After a lot of research, there were no files owned
+# by neither flag14 nor level14. No services running , we
+# scanned the ports , environement.
+# So we looked straight in the getflag binary located at 
+# /bin/getflag with GDB.
+# once we found the if forest with every uid (flag14 : 3014)
+# a little jump to the correct address like :jump *0x08048de5
+# the stack smashed but the flag appeared just above :).
+# that's it. (this exploit could be used for every levelXX)
 
