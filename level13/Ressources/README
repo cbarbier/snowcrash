@@ -1,0 +1,10 @@
+# Once we understood the perl code and found out that
+# even if we found the password ask on port 5151, it wont
+# give us the flag. We searched for somewere else and tried
+# on the backticks command executed (egrep ...). 
+# Because any space would be removed and every alphabet
+# will be uppercased, we couldn't access /tmp directly 
+# the only place where we can create script. So we used 
+# the wildcard to bypass the uppercase problem like so:
+# $(/*/12/XD) which executes getflag and redirect the 
+# output in a file. (both were chmod 777)
