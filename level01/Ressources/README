@@ -1,7 +1,5 @@
-cat /etc/passwd
-flag01:42hDRfypTqqnw:3001:3001::/home/flag/flag01:/bin/bash
-42hDRfypTqqnw est le hash du password de flag01. Le fait que le pass soit dans /etc/passwd au lieu de /etc/shadow 
-signifie que soit c'est un vieux linux soit ca a ete mal configuré
-On crack le pass avec john the ripper:
-echo "42hDRfypTqqnw" > lol && john lol
-flag01: abcdefg
+# cat /etc/passwd
+# flag01:42hDRfypTqqnw:3001:3001::/home/flag/flag01:/bin/bash
+# 42hDRfypTqqnw is the encrypted flag01's password. (It was on old linux version before shadow file exist)
+# echo "42hDRfypTqqnw" > clear_password && john --show clear_password
+# flag01 : abcdefg

@@ -1,8 +1,8 @@
-On voit que le binaire a un suid flag03 ce qui permet d'exectuer le binaire en tant que flag03
-On fait un nm sur le binaire on voit que la fonction system est appelé.
-On execute la commande strings pour voir les strings qui sont en dur dans le binaire.
-Une string retient notre attention "/usr/bin/env echo Exploit me"
-La commande echo n'utilise pas le path absolue ce qui represente une faille.
-On va donc faire un dossier dans le tmp et on fait un script qu'on appelera echo.
-On change la variable d'env PATH par le dossier cree dans tmp.
-Lorsque le binaire executera echo il executera le script mit dans /tmp et nous ouvrira un shell avec les droits flag03.
+# Found an suid binary
+# strings level03
+# One string seems interesting "/usr/bin/env echo Exploit me"
+# echo is not in absolute path
+# mkdir /tmp/exploit and copy the echo script in it
+# export PATH=/tmp/exploit
+# Run level03 binary
+# GG

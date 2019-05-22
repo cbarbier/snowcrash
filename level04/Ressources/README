@@ -3,5 +3,3 @@
 # the script executes echo $y with y being a
 # query parameter called 'x'
 # localhost:4747?x=$(bash -c getflag)
-# the subshell allows us to bypass the echo
-# therefore print the flag.
