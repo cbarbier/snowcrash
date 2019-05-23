@@ -7,4 +7,4 @@
 # a little jump to the correct address like :jump *0x08048de5
 # the stack smashed but the flag appeared just above :).
 # that's it. (this exploit could be used for every levelXX)
-
+# flag14: 7QiHafiNa3HVozsaXkawuYrTstxbpABHD8CPnHJ

